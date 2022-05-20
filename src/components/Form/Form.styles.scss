@@ -1,0 +1,125 @@
+@use '@styles' as *;
+
+.Form {
+    height: 100%;
+    padding: 16px;
+    font-size: 32px;
+    color: $primary;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        & + & {
+            margin-top: 16px;
+        }
+    }
+
+    &__label {
+        font-size: 75%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__input {
+        font: inherit;
+        width: 100%;
+        outline: none;
+        height: 60px;
+        border: none;
+        background: rgba($primary, 0.2);
+        padding: 0 16px;
+        color: inherit;
+        opacity: 1;
+        border-radius: 8px;
+
+        &.is-error {
+            box-shadow: inset 0 0 0 1px $red;
+        }
+    }
+
+    &__control {
+        display: block;
+        width: 100%;
+    }
+
+    &__radio {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        background: none;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__radio-input {
+        visibility: hidden;
+        position: absolute;
+        left: -9999px;
+    }
+
+    &__radio-icon {
+        width: 30px;
+        height: 30px;
+        background: rgba($primary, 0.2);
+        border-radius: 50%;
+        margin-right: 8px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            border-radius: 50%;
+            left: 15%;
+            top: 15%;
+            background: $primary;
+            opacity: 0;
+        }
+    }
+
+    &__radio-label {
+        font-size: 75%;
+        display: flex;
+        align-items: center;
+        user-select: none;
+    }
+
+    &__radio-input:checked + &__radio-icon:after {
+        opacity: 1;
+    }
+
+    &__button {
+        background: $primary;
+        color: white;
+        padding: 16px;
+        text-align: center;
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48%;
+
+        &.is-full {
+            width: 100%;
+        }
+
+        &.is-remove {
+            background: $red;
+            margin-left: auto;
+        }
+
+        &.is-disabled {
+            color: rgba(white, 0.2);
+        }
+    }
+
+    &__error {
+        color: $red;
+        font-size: 75%;
+    }
+}

@@ -1,0 +1,60 @@
+@use '@styles' as *;
+
+.App {
+    height: 100%;
+
+    &__no-data {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        user-select: none;
+    }
+
+    &__button {
+        height: $panel;
+        background: $primary;
+        color: white;
+        font-size: $panel * 0.5;
+        cursor: pointer;
+        line-height: 75px;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        user-select: none;
+        text-shadow: 1px 1px 0 rgba(black, 0.75);
+
+        &.is-disabled {
+            color: rgba(white, 0.2);
+            cursor: default;
+        }
+    }
+
+    &__button-add {
+        height: $panel;
+        width: $panel;
+        border-radius: 50%;
+        background: $primary;
+        color: white;
+        font-size: $panel;
+        cursor: pointer;
+        line-height: 75px;
+        text-align: center;
+        position: fixed;
+        bottom: $panel + 30px;
+        right: 30px;
+        user-select: none;
+    }
+
+    &__wrapper {
+        height: 100%;
+        padding-bottom: $panel;
+    }
+
+    &__form {
+        height: 100%;
+    }
+}

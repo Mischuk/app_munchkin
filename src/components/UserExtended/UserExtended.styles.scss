@@ -1,0 +1,115 @@
+@use '@styles' as *;
+
+.UserExtended {
+    $image: 40px;
+    $gap: 8px;
+    $gender: 24px;
+    $cell: 60px;
+    $head: 40px;
+
+    font-size: 24px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+    color: $primary;
+    transition: background 300ms ease;
+    width: 100%;
+
+    &:hover {
+        background: rgba($primary, 0.05);
+    }
+
+    &__image {
+        width: $image;
+        height: $image;
+        background: $primary;
+        background: url('../../assets/sprite.png');
+        background-size: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: $gap;
+        margin-left: $gap;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        position: relative;
+    }
+
+    &__details {
+        display: flex;
+        align-items: center;
+        width: calc(100% - $cell * 3);
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: $head;
+        background: $primary;
+        color: white;
+    }
+
+    &__name {
+        width: calc(100% - $gender - $image - ($gap * 4));
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__gender {
+        width: $gender;
+        margin-left: $gap;
+        margin-right: $gap;
+        display: flex;
+        align-items: center;
+    }
+
+    &__points {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-top: $head;
+    }
+
+    &__point {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: center;
+        user-select: none;
+        position: relative;
+
+        &:first-child {
+            border-right: 1px solid rgba($primary, 0.1);
+        }
+
+        &:last-child {
+            background: rgba($primary, 0.2);
+            font-weight: bold;
+            font-size: 38px;
+        }
+    }
+
+    &__scrollable {
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        scroll-snap-type: y mandatory;
+    }
+
+    &__scrollable-item {
+        min-height: 100%;
+        scroll-snap-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

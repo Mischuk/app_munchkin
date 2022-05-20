@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "@actions/*": ["./actions/*"],
+            "@components/*": ["./components/*"],
+            "@hooks/*": ["./core/hooks/*"],
+            "@models": ["./models"],
+            "@containers/*": ["./containers/*"],
+            "@apiHooks/*": ["./core/apiHooks/*"],
+            "@apiSchema": ["./core/apiSchema"],
+            "@apiConfig": ["./core/apiConfig"],
+            "@enums": ["./core/enums"],
+            "@helpers": ["./helpers"],
+            "@core/*": ["./core/*"],
+            "@icons": ["./icons"],
+            "@pages/*": ["./pages/*"],
+            "@reducers/*": ["./reducers/*"],
+            "@selectors/*": ["./selectors/*"],
+            "@assets/*": ["./assets/*"],
+            "@constants/*": ["./constants/*"],
+            "@routes": ["./Routes"],
+            "@styles": ["./assets/styles/core.styles.scss"],
+            "@states": ["./states"]
+        }
+    }
+}

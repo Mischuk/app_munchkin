@@ -1,0 +1,51 @@
+@use '@styles' as *;
+
+.User {
+    $image: 40px;
+    $gap: 8px;
+    $gender: 24px;
+
+    font-size: 24px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+    color: $primary;
+    transition: background 300ms ease;
+
+    &:hover {
+        background: rgba($primary, 0.05);
+    }
+
+    &__image {
+        width: $image;
+        height: $image;
+        background: $primary;
+        background: url('../../assets/sprite.png');
+        background-size: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: $gap;
+        margin-left: $gap;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        width: calc(100% - $image - $gap * 4);
+    }
+
+    &__gender {
+        width: $gender;
+        margin-left: $gap;
+        display: flex;
+        align-items: center;
+    }
+
+    &__name {
+        max-width: calc(100% - $gender - $gap);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}

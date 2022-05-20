@@ -1,0 +1,40 @@
+@import '~@csstools/normalize.css';
+@import './core.styles.scss';
+
+@font-face {
+    font-family: 'munchkinregular';
+    src: url('../fonts/munchkin.woff2') format('woff2'),
+        url('../fonts/munchkin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'munchkinregular', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    background: $secondary;
+}
+
+#root {
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    -webkit-appearance: none;
+    display: none;
+}

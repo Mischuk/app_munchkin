@@ -1,0 +1,29 @@
+@use '@styles' as *;
+
+.UsersList {
+    height: 100%;
+
+    &.is-open {
+        height: calc(100% + $panel);
+        position: relative;
+        background: $secondary;
+        z-index: 1;
+    }
+
+    &__items {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    &__item {
+        flex: 1;
+        width: 100%;
+        transition: all 500ms ease;
+
+        & + & {
+            border-top: 1px solid $primary;
+        }
+    }
+}
