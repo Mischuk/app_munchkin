@@ -1,0 +1,131 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-prettier/recommended"
+    ],
+    "plugins": [
+        "stylelint-scss",
+        "stylelint-prettier"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            true,
+            {
+                "tabWidth": 4,
+                "useTabs": false,
+                "singleQuote": true
+            }
+        ],
+        "no-duplicate-selectors": true,
+        "color-hex-case": null,
+        "color-hex-length": null,
+        "color-named": null,
+        "selector-max-id": 1,
+        "selector-combinator-space-after": "always",
+        "selector-attribute-quotes": "always",
+        "selector-attribute-operator-space-before": "never",
+        "selector-attribute-operator-space-after": "never",
+        "selector-attribute-brackets-space-inside": "never",
+        "declaration-block-trailing-semicolon": "always",
+        "declaration-no-important": true,
+        "declaration-colon-space-before": "never",
+        "declaration-colon-space-after": "always",
+        "number-leading-zero": "always",
+        "function-url-quotes": "always",
+        "font-weight-notation": "numeric",
+        "font-family-name-quotes": null,
+        "comment-whitespace-inside": "always",
+        "comment-empty-line-before":[
+            "always",
+            {
+                "except": ["first-nested"],
+                "ignore": ["after-comment", "stylelint-commands"]
+            }
+        ],
+        "rule-empty-line-before": [
+            "always",
+            {
+                "except": ["after-single-line-comment", "first-nested"],
+                "ignore": ["after-comment"]
+            }
+        ],
+        "selector-pseudo-element-colon-notation": "single",
+        "selector-pseudo-class-parentheses-space-inside": "never",
+        "media-feature-range-operator-space-before": "always",
+        "media-feature-range-operator-space-after": "always",
+        "media-feature-parentheses-space-inside": "never",
+        "media-feature-colon-space-before": "never",
+        "media-feature-colon-space-after": "always",
+        "at-rule-no-unknown": null,
+        "no-missing-end-of-source-newline": null,
+        "selector-class-pattern": "[A-z-_]",
+        "color-function-notation": null,
+        "alpha-value-notation": null,
+        "color-no-invalid-hex": true,
+        "no-duplicate-at-import-rules": true,
+        "function-whitespace-after": "always",
+        "custom-property-empty-line-before": "never",
+        "comment-no-empty": true,
+        "selector-type-case": "lower",
+        "unit-no-unknown": true,
+        "value-keyword-case": "lower",
+        "property-no-unknown": [
+            true,
+            {
+                "ignoreProperties": ["font-smoothing"]
+            }
+        ],
+        "property-no-vendor-prefix": [
+            true,
+            {
+                "ignoreProperties": [
+                    "-webkit-font-feature-settings",
+                    "-webkit-font-smoothing",
+                    "-webkit-box"
+                ]
+            }
+        ],
+        "value-no-vendor-prefix": [
+            true,
+            {
+                "ignoreValues": ["box", "display"]
+            }
+        ],
+        "scss/at-rule-no-unknown": true,
+        "scss/dollar-variable-colon-space-after": "always",
+        "scss/dollar-variable-colon-space-before": "never",
+        "scss/dollar-variable-no-missing-interpolation": true,
+        "scss/no-duplicate-mixins": true,
+        "declaration-empty-line-before": [
+            "always",
+            {
+                "except": ["after-comment", "after-declaration", "first-nested"]
+            }
+        ],
+        "scss/at-function-parentheses-space-before": "never",
+        "scss/at-mixin-argumentless-call-parentheses": "always",
+        "scss/at-mixin-parentheses-space-before": "never",
+        "scss/dollar-variable-empty-line-before": [
+            "always",
+            {
+                "except": ["first-nested", "after-comment", "after-dollar-variable", "first-nested"]
+            }
+        ],
+        "scss/selector-nest-combinators": "always",
+        "block-no-empty": true,
+        "declaration-block-no-duplicate-properties": true,
+        "no-descending-specificity": [
+            true,
+            {
+                "ignore": ["selectors-within-list"]
+            }
+        ],
+        "no-invalid-position-at-import-rule": [
+            true,
+            {
+                "ignoreAtRules": ["use"]
+            }
+        ]
+    },
+    "customSyntax": "postcss-scss"
+}
