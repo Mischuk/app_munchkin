@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/app_munchkin/static/css/main.67af7efe.css",
+    "main.css": "/app_munchkin/static/css/main.33526380.css",
     "main.js": "/app_munchkin/static/js/main.0a1ca6e3.js",
     "static/js/787.65602c3e.chunk.js": "/app_munchkin/static/js/787.65602c3e.chunk.js",
     "static/media/sprite.png": "/app_munchkin/static/media/sprite.4c445d431eec197b4716.png",
     "static/media/munchkin.woff": "/app_munchkin/static/media/munchkin.d99a576792e17a3f20cb.woff",
     "static/media/munchkin.woff2": "/app_munchkin/static/media/munchkin.8f7bc774f65ff980ef7e.woff2",
     "index.html": "/app_munchkin/index.html",
-    "main.67af7efe.css.map": "/app_munchkin/static/css/main.67af7efe.css.map",
+    "main.33526380.css.map": "/app_munchkin/static/css/main.33526380.css.map",
     "main.0a1ca6e3.js.map": "/app_munchkin/static/js/main.0a1ca6e3.js.map",
     "787.65602c3e.chunk.js.map": "/app_munchkin/static/js/787.65602c3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67af7efe.css",
+    "static/css/main.33526380.css",
     "static/js/main.0a1ca6e3.js"
   ]
 }
